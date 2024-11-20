@@ -8,7 +8,12 @@
   <div class="title">
     <a href=$url$>$title$</a>
   </div>
-  <div class="subtitle">
+  $if(description)$
+    <div class="subtitle">
+      $description$
+    </div>
+  $endif$
+  <div class="subsubtitle">
       <span class="turkce-tarih">$date$</span> tarihinde 
       $if(tags)$
         yazılıp $tags$ ile etiketlendi.

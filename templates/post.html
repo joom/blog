@@ -8,7 +8,12 @@
   <div class="title">
     <a href=$url$>$title$</a>
   </div>
-  <div class="subtitle">
+  $if(description)$
+    <div class="subtitle">
+      $description$
+    </div>
+  $endif$
+  <div class="subsubtitle">
       Posted on $date$,
       $if(tags)$
         tags: $tags$

@@ -543,6 +543,6 @@ digraph {
     82048 -> 42361;
     40765 -> 42361;
     
-    42361 -> 1;
-    1 [label="Joomy Korkut\nPrinceton University (2024)"];
+    42361 -> 326400;
+    326400 [label="Joomy Korkut\nPrinceton University (2024)"];
 }

@@ -27,3 +27,18 @@ Another paper worth mentioning is by Affeldt and Sakaguchi, from 2014, titled [A
 > An intrinsic encoding also helps when developing the verification framework because having to deal with only correctly-typed programs reduces the number of error cases to be treated when developing the semantics and the related lemmas.
 
 Right now the earliest paper I found that uses/contrasts the terms "intrinsic" vs. "extrinsic" outside of the type theory sense is the first paper I worked on when I was an undergrad. It is the 2016 paper [Intrinsic Verification of a Regular Expression Matcher](https://joomy.korkutblech.com/papers/regexp2016.pdf), where we explain this dichotomy (or rather, spectrum) for any program, and not just programming language interpreters. However, I remember getting the impression from [my advisor at the time](https://dlicata.wescreates.wesleyan.edu/) that this was folklore, so I think there must be some other paper out there that uses these terms in a general program verification way. Or maybe this isn't even a meaningful distinction? Any ideas?
+
+**Update from Feb 10th, 2025:** I found other earlier / contemporary uses, and other (later) significant uses of the intrinsic vs. extrinsic verification terminology that should be mentioned here. I will keep an updated list at the end of this blog post, so that everyone can refer to this page for the history of these terms.
+
+So here's my current timeline of the use of this terminology that is program verification and not for type theory:
+
+* 2013: [Coq-Club e-mail by Abhishek Anand](https://sympa.inria.fr/sympa/arc/coq-club/2013-11/msg00183.html)
+* January 2016: [Intrinsic verification of a regular expression matcher. Korkut, Trifunovski, Licata.](https://joomy.korkutblech.com/papers/regexp2016.pdf)
+* July 2016: [Certification of context-free grammar algorithms. Firsov.](https://firsov.ee/phd/thesis.pdf)
+* 2017: [A tale of two provers: verifying monoidal string matching in Liquid Haskell and Coq. Vazou et al.](https://doi.org/10.1145/3156695.3122963)
+* 2020: [Programming language foundations in Agda. Kokke et al.](https://doi.org/10.1016/j.scico.2020.102440)
+* 2022: [Reasonable Agda is correct Haskell: writing verified Haskell using agda2hs. Cockx et al.](https://doi.org/10.1145/3546189.3549920)
+* 2023: [Program Proofs. Leino.](https://mitpress.mit.edu/9780262546232/program-proofs/)
+* 2025: [Intrinsically correct sorting in Cubical Agda. Alexandru et al.](https://doi.org/10.1145/3703595.3705873)
+
+Please let me know [by email](mailto:joomy@type.systems) if you have an earlier use of this term for program verification. (Though note that some earlier uses might be primarily for type theory.)

@@ -189,3 +189,19 @@ img.photo {
 blockquote {
   color: #857769;
 }
+
+.code-pair {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.code-pair > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 10px;
+  border: 1px solid black; 
+}

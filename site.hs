@@ -3,8 +3,6 @@ import           Data.Maybe
 import           Data.Monoid
 import           Hakyll
 import           Text.Pandoc.Options
-import qualified Data.Set as S
-import qualified Data.Map as M
 
 --------------------------------------------------------------------------------
 hakyllConf :: Configuration
@@ -155,7 +153,7 @@ customPandocCompiler :: Compiler (Item String)
 customPandocCompiler =
     let customExtensions = [Ext_footnotes, Ext_autolink_bare_uris]
         defaultExtensions = writerExtensions defaultHakyllWriterOptions
-        newExtensions = foldr S.insert defaultExtensions customExtensions
+        newExtensions = foldr enableExtension defaultExtensions customExtensions
         writerOptions = defaultHakyllWriterOptions {
                           writerExtensions = newExtensions
                         }
